@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        h1 {
+            
+        }
+
+        nav {
+            background-color: rgb(131, 130, 130);
+            padding: 3px;
+            box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+        }
+        
+        nav > a {
+            text-decoration: none;
+            color: white;
+            padding: 3px;
+            margin: 35px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding:10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.403);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        section > aside {
+            padding: 15px 0px;
+        }
+
+        article {
+            background-color: rgb(195, 190, 185);
+            padding: 3px 0px 3px 0px;
+            border-radius: 20px 0px;
+            padding: 2px 2px 2px 2px;
+            margin: auto;
+        }
+
+        article > aside {
+            background-color: rgb(53, 53, 53);
+            color: white;
+            border-radius: 2px;
+        }
+
+        div#bola {
+            background-color: white;
+             height: 150px;
+             width: 150px;
+             margin: 10px;
+             border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu síte</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <aside>
+                Esportes Política Tecnologia
+            </aside>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias são o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, obcaecati? Iure omnis eveniet dolorum quisquam, consequuntur atque architecto obcaecati corrupti dolor? Cumque, magnam modi! Distinctio saepe facere quasi quaerat sit.
+                </p>
+            <aside>
+                    <p>Artigo escrito por José da Silva</p>
+            </aside>
+                 
+        </section>
+    
+    </main>
+    <footer>
+        <p>Desenvolvido por ThunderStudios</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
