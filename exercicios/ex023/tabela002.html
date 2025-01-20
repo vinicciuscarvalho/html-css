@@ -6,21 +6,41 @@
     <title>Tabelas</title>
 
     <style>
+        
+
         table {
             font-family: Arial, Helvetica, sans-serif;
             width: 500px;
             border: 2px solid black;
             border-collapse: collapse;
+            position:  relative;
             
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color:  #343434;
         }
 
         thead, tfoot {
-            background-color: lightgray;
+            background-color: #343434;
+            color: white;
             text-align: center;
         }
 
         tbody{
             height: 500px;
+        }
+        tbody tr:nth-child(2n) { /*EVEN(2n) = PAR, ODD(2n-1) = ÍMPAR*/
+            background-color: lightgray;
         }
 
         td, th{
@@ -47,6 +67,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TD, TR, TH
             TBODY
@@ -55,11 +76,12 @@
                 TD, TR, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Nº</th>
-                <th>Unidade Federativa</th>
-                <th>Populaçao (estimativa 2024)</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 70px;">Populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -118,10 +140,12 @@
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="pop">157.916.092</td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, dolor magni, quaerat harum repudiandae tempora blanditiis doloremque eos praesentium est at mollitia quis fugit quia quae tenetur fuga? Iusto ea quia corporis asperiores quos excepturi adipisci voluptatem necessitatibus laudantium magni. Excepturi quam ab eveniet accusamus veniam, ex error! Ipsum quidem maxime assumenda veritatis laboriosam, laudantium ex fuga ut inventore nemo at minus nostrum ipsa placeat. Corporis, cupiditate soluta? Consectetur ratione dolorem magnam unde soluta asperiores natus commodi similique incidunt sit repudiandae esse sed vel error earum accusantium voluptatibus nobis eius iste illum, veniam quisquam. Autem vero assumenda amet dolor error impedit mollitia ut quo nemo voluptatum at rerum eveniet quasi eum reiciendis, soluta quis? Mollitia quae ab tenetur voluptatibus iste totam eius, corrupti velit dicta repudiandae soluta, voluptas ipsa? Animi suscipit labore fuga accusantium praesentium esse recusandae minus ullam maxime iure distinctio culpa corporis aliquid saepe quos error, deserunt harum dolores nisi consequuntur obcaecati ex? Reprehenderit eos ea cum ducimus nihil aliquid maiores itaque, quae tenetur accusamus ut? Incidunt amet nemo vero repudiandae placeat sed ducimus inventore velit voluptatum neque obcaecati excepturi iure necessitatibus optio pariatur architecto, ullam dolorum, nulla voluptas aspernatur omnis culpa illum reiciendis rerum. Non maxime doloribus cum quaerat unde, temporibus harum quo quis earum nisi totam tempore itaque officia aliquid ipsam nesciunt, dignissimos perferendis asperiores alias. Adipisci, atque beatae laudantium porro magnam non iusto asperiores illo perspiciatis animi labore? Voluptas, iure ducimus tempore soluta nisi nulla ea, placeat perspiciatis quos suscipit quis eum quaerat. Aliquid, similique tenetur. Ex veritatis ipsa excepturi dignissimos et tenetur officia voluptatibus earum enim rem, voluptatem ducimus laborum nostrum perferendis sequi porro omnis atque harum facere error? Fugit iure perspiciatis eos impedit? Eaque tempora esse deleniti labore doloremque voluptate in expedita dolore dignissimos sunt quos minus voluptates nihil, deserunt, reiciendis blanditiis! Autem sunt doloremque minus quod, porro laborum. Eaque dolores iusto dolorem autem maxime distinctio facilis accusantium! Debitis ipsam quisquam, recusandae beatae itaque quaerat ullam cupiditate, nihil quas blanditiis repudiandae aspernatur iure, molestiae ea neque! Fuga dolorum tempora fugiat eius ipsum, accusantium, corrupti tempore aperiam quia adipisci, voluptatibus eum reiciendis ad. Numquam voluptatum impedit doloribus minus ad, animi odit quo minima aliquam saepe laudantium harum necessitatibus laborum deleniti quas libero esse hic consequuntur? Doloribus quas nihil nisi est, natus vitae consequatur quasi nam nemo repellendus adipisci fuga perferendis eum repellat repudiandae maxime modi tempora ipsa? Asperiores, doloremque minima nesciunt reiciendis praesentium laborum molestias vel! Neque voluptas animi incidunt cum, obcaecati hic nostrum inventore dolore voluptates corporis beatae temporibus ullam nemo qui totam aliquam nisi sunt repellat, tenetur ipsum reiciendis illo tempore consectetur adipisci? Obcaecati eos quam saepe nisi illum consectetur eveniet explicabo animi amet cupiditate eligendi quia laborum quaerat, incidunt in magnam totam, laboriosam fuga alias vitae earum nihil dolor? Nobis perferendis itaque consequuntur quis fuga ad fugiat temporibus culpa vitae voluptate esse atque tempora animi possimus, dolore optio maiores dicta natus porro obcaecati tenetur aliquam repellendus praesentium. Similique, magni repudiandae dolorem quaerat esse nam pariatur itaque provident voluptates, ipsam reprehenderit omnis?</p>
 </body>
 </html>
